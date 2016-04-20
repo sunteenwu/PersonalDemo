@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+ <header id = "1">
+    <title>
+        some text
+    </title>
+    <question>
+        a question
+    </question>
+    <user_input>
+        <input1>
+        </input1>
+        <input2>
+        </input2>
+    </user_input>
+</header>
+<header id = "2">
+    <title>
+        some text
+    </title>
+    <question>
+        a question
+    </question>
+    <user_input>
+        <input1>
+        </input1>
+        <input2>
+        </input2>
+    </user_input>
+</header>
+</rss>
+

@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="CXML.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CXML"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+      <TextBox x:Name="TxtInput" Header="Please input the value you want to insert to input1 node where header id=1"></TextBox>
+      <Button x:Name="BtnXmlWrite" Content="Insert value" Click="BtnXmlWrite_Click"></Button> 
+      <RichEditBox x:Name="ShowXMLResult"  MinHeight="100" MinWidth="100"/>
+      <Button x:Name="BtnSave" Content="Save xml" Click="BtnSave_Click"></Button>
+    </StackPanel>
+</Page>
