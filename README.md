@@ -1,2 +1,3 @@
 # PersonalDemo
-This simple demo shows remove items from a listview to target listview.
+ 
+This repository is for uploading of demos for op.
