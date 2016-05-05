@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="951dbc1c-3ab8-42e7-9b85-c4d83d99fb22"
-    Publisher="CN=Administrator"
+    Name="dcb3b7de-641e-4d9c-a352-24bb3296c40b"
+    Publisher="CN=v-xunwu"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="951dbc1c-3ab8-42e7-9b85-c4d83d99fb22" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="dcb3b7de-641e-4d9c-a352-24bb3296c40b" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>CSplashScreen</DisplayName>
-    <PublisherDisplayName>Administrator</PublisherDisplayName>
+    <PublisherDisplayName>v-xunwu</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
