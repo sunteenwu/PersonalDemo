@@ -7,6 +7,7 @@ using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Core;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -24,6 +25,7 @@ namespace CSplashScreen
     /// </summary>
     partial class ExtendedSplash : Page
     {
+
         string text = "800";
 
         internal Rect splashImageRect; // Rect to store splash screen image coordinates.
@@ -31,10 +33,15 @@ namespace CSplashScreen
         internal bool dismissed = false; // Variable to track splash screen dismissal status.
         internal Frame rootFrame;
         //https://msdn.microsoft.com/zh-cn/library/jj819807.aspx
+
+
         public ExtendedSplash(SplashScreen splashscreen, bool loadState)
         {
             this.DataContext = text;
             InitializeComponent();
+            ApplicationView.PreferredLaunchViewSize = new Size(800, 800);
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+
             storyboard.Completed += MyStoryboard_Completed;
             // Listen for window resize events to reposition the extended splash screen image accordingly.
             // This is important to ensure that the extended splash screen is formatted properly in response to snapping, unsnapping, rotation, etc...
@@ -77,8 +84,11 @@ namespace CSplashScreen
         void PositionImage()
         {
             SplashScreenImage.SetValue(Canvas.LeftProperty, splashImageRect.X);
+            //System.Diagnostics.Debug.WriteLine(splashImageRect.X);
             SplashScreenImage.SetValue(Canvas.TopProperty, splashImageRect.Y);
+            System.Diagnostics.Debug.WriteLine(splashImageRect.Y);
             SplashScreenImage.Height = splashImageRect.Height;
+            System.Diagnostics.Debug.WriteLine(splashImageRect.Height);
             SplashScreenImage.Width = splashImageRect.Width;
             storyboard.Begin();
         }

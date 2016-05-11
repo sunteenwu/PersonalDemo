@@ -12,13 +12,12 @@
             <StackPanel.Resources>
                 <Storyboard x:Name="storyboard">
                     <DoubleAnimationUsingKeyFrames Storyboard.TargetName="SplashScreenImage" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)">
-                        <LinearDoubleKeyFrame KeyTime="0:0:0" Value="50" />
-                        <LinearDoubleKeyFrame KeyTime="0:0:2" Value="120" />
-                        <LinearDoubleKeyFrame KeyTime="0:0:9" Value="400" />
+                        <LinearDoubleKeyFrame KeyTime="0:0:0" Value="0" />
+                        <LinearDoubleKeyFrame KeyTime="0:0:2" Value="250" />                       
                     </DoubleAnimationUsingKeyFrames>
                 </Storyboard>
             </StackPanel.Resources>
-            <Canvas>
+            <Canvas x:Name="CanvasImage"  >
                 <Image x:Name="SplashScreenImage" Source="Assets/caffe600320.jpg">
                     <Image.RenderTransform>
                         <TranslateTransform />
