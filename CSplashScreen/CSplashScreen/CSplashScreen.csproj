@@ -113,6 +113,8 @@
     <None Include="CSplashScreen_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\cafee2.jpg" />
+    <Content Include="Assets\caffe3.jpg" />
     <Content Include="Assets\caffe600320.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
