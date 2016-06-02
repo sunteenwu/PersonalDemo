@@ -3,22 +3,18 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="using:CSplashScreen"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      Loaded="Page_Loaded"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"     
       mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel x:Name="ContentGrid">
-            <Canvas x:Name="CanvasImage">
-                <FlipView x:Name="ImageFlipView">
-                    <Image Source="ms-appx:///Assets/caffe600320.jpg" Stretch="Fill" />
-                    <Image Source="ms-appx:///Assets/cafee2.jpg" Stretch="Fill" />
-                    <Image Source="ms-appx:///Assets/caffe3.jpg" Stretch="Fill" />
-                </FlipView>
-            </Canvas>
-            <Button x:Name="BtnDismissSplash"
-                    Click="BtnDismissSplash_Click"
-                    Content="End the extended splash and enter in mainpage" />
-        </StackPanel>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">       
+        <FlipView x:Name="ImageFlipView">
+            <Image Source="ms-appx:///Assets/caffe600320.jpg" Stretch="Fill" />
+            <Image Source="ms-appx:///Assets/cafee2.jpg" Stretch="Fill" />
+            <Image Source="ms-appx:///Assets/caffe3.jpg" Stretch="Fill" />
+        </FlipView>
+        <Button x:Name="BtnDismissSplash"
+                Click="BtnDismissSplash_Click"
+                Content="End the extended splash and enter in mainpage" VerticalAlignment="Top" />
+       
     </Grid>
 </Page>
