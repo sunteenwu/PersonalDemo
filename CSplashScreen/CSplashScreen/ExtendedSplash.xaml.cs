@@ -24,15 +24,18 @@ namespace CSplashScreen
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class ExtendedSplash : Page
+    public partial class ExtendedSplash 
     {
         private SplashScreen splash; // Variable to hold the splash screen object.
         internal bool dismissed = false; // Variable to track splash screen dismissal status.
         internal Frame rootFrame;
         private readonly DispatcherTimer _timer;
+
         public ExtendedSplash(SplashScreen splashscreen, bool loadState)
         {
             this.InitializeComponent();
+            StatusBar statusbar = StatusBar.GetForCurrentView();
+              statusbar.HideAsync();
             if (splash != null)
             {
                 splash.Dismissed += new TypedEventHandler<SplashScreen, Object>(DismissedEventHandler);
@@ -55,8 +58,7 @@ namespace CSplashScreen
         // Include code to be executed when the system has transitioned from the splash screen to the extended splash screen (application's first view).
         void DismissedEventHandler(SplashScreen sender, object e)
         {
-            dismissed = true;
-            // Complete app setup operations here...
+            dismissed = true;            
         }
         private void BtnDismissSplash_Click(object sender, RoutedEventArgs e)
         {
