@@ -35,7 +35,7 @@ namespace CSplashScreen
         {
             this.InitializeComponent();
             StatusBar statusbar = StatusBar.GetForCurrentView();
-              statusbar.HideAsync();
+            statusbar.HideAsync();
             if (splash != null)
             {
                 splash.Dismissed += new TypedEventHandler<SplashScreen, Object>(DismissedEventHandler);
