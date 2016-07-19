@@ -1,0 +1,4 @@
+MainPackage=D:\Project\DistanceTracker\DistanceTracker\bin\ARM\Release\Upload\DistanceTracker_1.1.17.0_ARM.appx
+ResourcePack=D:\Project\DistanceTracker\DistanceTracker\_scale-100.appx
+ResourcePack=D:\Project\DistanceTracker\DistanceTracker\_scale-125.appx
+ResourcePack=D:\Project\DistanceTracker\DistanceTracker\_scale-150.appx
