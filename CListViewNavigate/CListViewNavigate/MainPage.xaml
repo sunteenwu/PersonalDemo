@@ -6,17 +6,30 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <ScrollViewer>
+        <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="20">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ListView x:Name="listImage" >
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Padding="20">
-                        <TextBlock Text="{Binding  ImageName}"/>
-                        <Image PointerPressed="Image_PointerPressed" Source="{Binding ImageUrl}" Height="80"></Image>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </Grid>
+            <ListView x:Name="listImage" Header="List1">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Padding="20">
+                            <TextBlock Text="{Binding  ImageName}"/>
+                            <Image PointerPressed="Image_PointerPressed" Source="{Binding ImageUrl}" Height="80"></Image>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <ListView x:Name="listImage2" Header="List2" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Padding="20">
+                            <TextBlock Text="{Binding  ImageName}"/>
+                            <Image PointerPressed="Image_PointerPressed_1"  Source="{Binding ImageUrl}" Height="80"></Image>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackPanel>
+    </ScrollViewer>
 </Page>

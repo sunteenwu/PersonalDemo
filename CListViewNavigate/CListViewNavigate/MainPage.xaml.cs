@@ -32,6 +32,7 @@ namespace CListViewNavigate
                 new Images {ImageName="img1",ImageUrl="Assets/caffe3.jpg"  }
             };
             listImage.ItemsSource = itemsources;
+            listImage2.ItemsSource = itemsources;
         }
 
         private void Image_PointerPressed(object sender, PointerRoutedEventArgs e)
@@ -39,6 +40,23 @@ namespace CListViewNavigate
             Image selectedimage = e.OriginalSource as Image;
             Images select = (Images)selectedimage.DataContext;
             Frame.Navigate(typeof(ShowImage),select);
+        }
+
+        private async void Image_PointerPressed_1(object sender, PointerRoutedEventArgs e)
+        {
+            Image selectedimage = e.OriginalSource as Image;
+            Images select = (Images)selectedimage.DataContext;
+            ContentDialogShowImage imagedialog = new ContentDialogShowImage(select);
+            ContentDialogResult result = await imagedialog.ShowAsync();
+            if (result == ContentDialogResult.Primary)
+            {
+                // Terms of use were accepted.
+            }
+            else
+            {
+                // User pressed Cancel or the back arrow.
+                // Terms of use were not accepted.
+            }
         }
     }
     public class Images
