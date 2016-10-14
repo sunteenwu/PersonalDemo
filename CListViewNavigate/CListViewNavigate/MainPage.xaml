@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="CListViewNavigate.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CListViewNavigate"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ListView x:Name="listImage" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Padding="20">
+                        <TextBlock Text="{Binding  ImageName}"/>
+                        <Image PointerPressed="Image_PointerPressed" Source="{Binding ImageUrl}" Height="80"></Image>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>
