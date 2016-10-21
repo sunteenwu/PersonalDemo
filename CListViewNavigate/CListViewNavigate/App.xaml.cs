@@ -31,7 +31,7 @@ namespace CListViewNavigate
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
-           
+
         }
 
         /// <summary>
