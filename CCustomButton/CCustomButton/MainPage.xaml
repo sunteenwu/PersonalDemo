@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="CCustomButton.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CCustomButton"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="30">
+        <!--<local:CustomButton></local:CustomButton>-->
+        <local:NewButton Height="30" Width="80"></local:NewButton>
+        <local:NewButton2 Content="$13.66"></local:NewButton2>
+    </StackPanel>
+</Page>
