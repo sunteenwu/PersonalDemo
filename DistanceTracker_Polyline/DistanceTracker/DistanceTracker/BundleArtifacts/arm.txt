@@ -1,5 +1,0 @@
-MainPackage=D:\Project\DistanceTracker\DistanceTracker\bin\ARM\Release\DistanceTracker_1.1.17.0_ARM.appx
-SymbolPackage=D:\Project\DistanceTracker\DistanceTracker\AppPackages\DistanceTracker_1.1.17.0_Test\DistanceTracker_1.1.17.0_ARM.appxsym
-ResourcePack=D:\Project\DistanceTracker\DistanceTracker\bin\ARM\Release\DistanceTracker_1.1.17.0_scale-100.appx
-ResourcePack=D:\Project\DistanceTracker\DistanceTracker\bin\ARM\Release\DistanceTracker_1.1.17.0_scale-125.appx
-ResourcePack=D:\Project\DistanceTracker\DistanceTracker\bin\ARM\Release\DistanceTracker_1.1.17.0_scale-150.appx
