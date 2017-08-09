@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="CExcel.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:CExcel"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Padding="30" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button
+            x:Name="btnopenfile"
+            Click="btnopenfile_Click"
+            Content="open a excel file" />
+        <Button
+            x:Name="btnreaddata"
+            Click="btnreaddata_Click"
+            Content="read data from the excel" />
+        <TextBox x:Name="txtresult" TextWrapping="Wrap" />
+
+    </StackPanel>
+</Page>
