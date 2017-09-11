@@ -212,12 +212,11 @@ namespace CPathAnimation
 
                     _intervalIdx.Add(idx);
                 }
-
-
-                //Ensure the last location is the last coordinate in the path.
-                _intervalLocs.Add(_path.Positions[_path.Positions.Count - 1]);
-                _intervalIdx.Add(_path.Positions.Count - 1);
             }
+
+            //Ensure the last location is the last coordinate in the path.
+            _intervalLocs.Add(_path.Positions[_path.Positions.Count - 1]);
+            _intervalIdx.Add(_path.Positions.Count - 1);
         }
 
 
